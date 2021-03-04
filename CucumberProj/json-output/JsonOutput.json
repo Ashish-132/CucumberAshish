@@ -1,0 +1,132 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 23,
+        "name": "Test Application2",
+        "description": "",
+        "id": "create-test-case;test-application2;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 296868300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Userone is on login page",
+            "match": {
+              "location": "StepDefn2.userone_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Title is gmail as",
+            "match": {
+              "location": "StepDefn2.title_is_gmail_as()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3427900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters \"ashish\" and \"Rout\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ashish",
+                  "offset": 13
+                },
+                {
+                  "val": "Rout",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefn2.user_enters_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Test Application2",
+        "description": "",
+        "id": "create-test-case;test-application2;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 40100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Userone is on login page",
+            "match": {
+              "location": "StepDefn2.userone_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Title is gmail as",
+            "match": {
+              "location": "StepDefn2.title_is_gmail_as()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 195900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enters \"abcdef\" and \"qwey\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcdef",
+                  "offset": 13
+                },
+                {
+                  "val": "qwey",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefn2.user_enters_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create Test case",
+    "description": "",
+    "id": "create-test-case",
+    "keyword": "Feature",
+    "uri": "C:/Users/ak769/Desktop/Program/CucumberProj/src/main/java/Features/login.feature"
+  }
+]

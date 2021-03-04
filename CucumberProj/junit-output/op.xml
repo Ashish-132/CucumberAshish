@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.300585">
+    <testcase classname="Create Test case" name="Test Application2" time="0.300324">
+        <system-out><![CDATA[Given Userone is on login page..............................................passed
+When Title is gmail as......................................................passed
+Then user enters "ashish" and "Rout"........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create Test case" name="Test Application2 2" time="0.000261">
+        <system-out><![CDATA[Given Userone is on login page..............................................passed
+When Title is gmail as......................................................passed
+Then user enters "abcdef" and "qwey"........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
