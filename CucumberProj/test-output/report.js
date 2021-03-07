@@ -1,223 +1,119 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/ak769/Desktop/Program/CucumberProj/src/main/java/Features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/ak769/git/CucumberAshish/CucumberProj/src/main/java/Features/mapsuse.feature");
 formatter.feature({
   "line": 1,
-  "name": "Create Test case",
+  "name": "Check accessbility",
   "description": "",
-  "id": "create-test-case",
+  "id": "check-accessbility",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 3,
-      "value": "#Scenario: Test Application"
-    },
-    {
-      "line": 4,
-      "value": "#Given User is on login page"
-    },
-    {
-      "line": 5,
-      "value": "#When Title is gmail"
-    },
-    {
-      "line": 6,
-      "value": "#Then user enters username"
-    },
-    {
-      "line": 7,
-      "value": "#Then user enters password"
-    },
-    {
-      "line": 8,
-      "value": "#Then user sucessfully logged in"
-    },
-    {
-      "line": 10,
-      "value": "#Scenario: Test application1"
-    },
-    {
-      "line": 11,
-      "value": "#Given user on login"
-    },
-    {
-      "line": 12,
-      "value": "#When title is gm"
-    },
-    {
-      "line": 14,
-      "value": "#with examples keyword"
-    }
-  ],
-  "line": 15,
-  "name": "Test Application2",
+formatter.scenario({
+  "line": 3,
+  "name": "check login",
   "description": "",
-  "id": "create-test-case;test-application2",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "check-accessbility;check-login",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 16,
-  "name": "Userone is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "Title is gmail as",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 18,
-  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 20,
-  "name": "",
-  "description": "",
-  "id": "create-test-case;test-application2;",
+  "line": 4,
+  "name": "Provide Credentials",
   "rows": [
     {
       "cells": [
         "username",
-        "password"
+        "Password"
       ],
-      "line": 22,
-      "id": "create-test-case;test-application2;;1"
+      "line": 5
     },
     {
       "cells": [
-        "ashish",
-        "Rout"
+        "user1",
+        "pass1"
       ],
-      "line": 23,
-      "id": "create-test-case;test-application2;;2"
+      "line": 6
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "user enters values",
+  "rows": [
+    {
+      "cells": [
+        "Test1",
+        "Test2",
+        "Test3"
+      ],
+      "line": 8
     },
     {
       "cells": [
-        "abcdef",
-        "qwey"
+        "set1",
+        "set2",
+        "set5"
       ],
-      "line": 24,
-      "id": "create-test-case;test-application2;;3"
+      "line": 9
+    },
+    {
+      "cells": [
+        "set3",
+        "set4",
+        "set6"
+      ],
+      "line": 10
     }
   ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 23,
-  "name": "Test Application2",
-  "description": "",
-  "id": "create-test-case;test-application2;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "Userone is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "Title is gmail as",
   "keyword": "When "
 });
 formatter.step({
-  "line": 18,
-  "name": "user enters \"ashish\" and \"Rout\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "line": 11,
+  "name": "user logged in",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "user checks title",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "user closes browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefn2.userone_is_on_login_page()"
+  "location": "mspUseStepDefn.provide_Credentials(DataTable)"
 });
 formatter.result({
-  "duration": 296868300,
+  "duration": 237164900,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefn2.title_is_gmail_as()"
+  "location": "mspUseStepDefn.user_enters_values(DataTable)"
 });
 formatter.result({
-  "duration": 28000,
+  "duration": 347800,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "ashish",
-      "offset": 13
-    },
-    {
-      "val": "Rout",
-      "offset": 26
-    }
-  ],
-  "location": "StepDefn2.user_enters_username_and_password(String,String)"
+  "location": "mspUseStepDefn.user_logged_in()"
 });
 formatter.result({
-  "duration": 3427900,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 24,
-  "name": "Test Application2",
-  "description": "",
-  "id": "create-test-case;test-application2;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 16,
-  "name": "Userone is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 17,
-  "name": "Title is gmail as",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 18,
-  "name": "user enters \"abcdef\" and \"qwey\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefn2.userone_is_on_login_page()"
-});
-formatter.result({
-  "duration": 40100,
+  "duration": 34900,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefn2.title_is_gmail_as()"
+  "location": "mspUseStepDefn.user_checks_title()"
 });
 formatter.result({
-  "duration": 24700,
+  "duration": 32200,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "abcdef",
-      "offset": 13
-    },
-    {
-      "val": "qwey",
-      "offset": 26
-    }
-  ],
-  "location": "StepDefn2.user_enters_username_and_password(String,String)"
+  "location": "mspUseStepDefn.user_closes_browser()"
 });
 formatter.result({
-  "duration": 195900,
+  "duration": 35100,
   "status": "passed"
 });
 });

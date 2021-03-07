@@ -3,130 +3,122 @@
     "line": 1,
     "elements": [
       {
-        "line": 23,
-        "name": "Test Application2",
+        "line": 3,
+        "name": "check login",
         "description": "",
-        "id": "create-test-case;test-application2;;2",
+        "id": "check-accessbility;check-login",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 296868300,
+              "duration": 237164900,
               "status": "passed"
             },
-            "line": 16,
-            "name": "Userone is on login page",
+            "line": 4,
+            "name": "Provide Credentials",
             "match": {
-              "location": "StepDefn2.userone_is_on_login_page()"
+              "location": "mspUseStepDefn.provide_Credentials(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "Password"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "user1",
+                  "pass1"
+                ],
+                "line": 6
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 28000,
+              "duration": 347800,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Title is gmail as",
+            "line": 7,
+            "name": "user enters values",
             "match": {
-              "location": "StepDefn2.title_is_gmail_as()"
+              "location": "mspUseStepDefn.user_enters_values(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Test1",
+                  "Test2",
+                  "Test3"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "set1",
+                  "set2",
+                  "set5"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "set3",
+                  "set4",
+                  "set6"
+                ],
+                "line": 10
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3427900,
+              "duration": 34900,
               "status": "passed"
             },
-            "line": 18,
-            "name": "user enters \"ashish\" and \"Rout\"",
+            "line": 11,
+            "name": "user logged in",
             "match": {
-              "arguments": [
-                {
-                  "val": "ashish",
-                  "offset": 13
-                },
-                {
-                  "val": "Rout",
-                  "offset": 26
-                }
-              ],
-              "location": "StepDefn2.user_enters_username_and_password(String,String)"
+              "location": "mspUseStepDefn.user_logged_in()"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 24,
-        "name": "Test Application2",
-        "description": "",
-        "id": "create-test-case;test-application2;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 40100,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Userone is on login page",
-            "match": {
-              "location": "StepDefn2.userone_is_on_login_page()"
-            },
-            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 24700,
+              "duration": 32200,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Title is gmail as",
+            "line": 12,
+            "name": "user checks title",
             "match": {
-              "location": "StepDefn2.title_is_gmail_as()"
+              "location": "mspUseStepDefn.user_checks_title()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 195900,
+              "duration": 35100,
               "status": "passed"
             },
-            "line": 18,
-            "name": "user enters \"abcdef\" and \"qwey\"",
+            "line": 13,
+            "name": "user closes browser",
             "match": {
-              "arguments": [
-                {
-                  "val": "abcdef",
-                  "offset": 13
-                },
-                {
-                  "val": "qwey",
-                  "offset": 26
-                }
-              ],
-              "location": "StepDefn2.user_enters_username_and_password(String,String)"
+              "location": "mspUseStepDefn.user_closes_browser()"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Create Test case",
+    "name": "Check accessbility",
     "description": "",
-    "id": "create-test-case",
+    "id": "check-accessbility",
     "keyword": "Feature",
-    "uri": "C:/Users/ak769/Desktop/Program/CucumberProj/src/main/java/Features/login.feature"
+    "uri": "C:/Users/ak769/git/CucumberAshish/CucumberProj/src/main/java/Features/mapsuse.feature"
   }
 ]
